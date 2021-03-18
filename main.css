@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    text-shadow: 1px 1px 0px black;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(218, 185, 185);
+    position: relative;
+}
+
+.registration, .logining, .user-info {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.registration {
+    height: 500px;
+}
+
+.user-info {
+    height: 450px;
+    background-color: blanchedalmond;
+    box-shadow: 0px 0px 5px black inset;
+}
+
+.logining {
+    height: 250px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.sign-up, .sign-in {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sign-up {
+    height: 400px;
+}
+
+.sign-in {
+    height: 200px;
+}
+
+input {
+    width: 280px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+[type="button"] {
+    background-color: blueviolet;
+    color: white;
+}
+
+[type="text"]:focus, [type="email"]:focus, [type="password"]:focus {
+    border: 3px solid blueviolet;
+}
+
+[type="button"]:hover {
+    background-color: rgb(87, 0, 168);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h4:hover {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.user-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 1px solid black;
+    background-image: url(images/Man.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr {
+    width: 200px;
+    height: 3px;
+    background-color: black;
+}
+
+.hidden {
+    display: none;
+}
