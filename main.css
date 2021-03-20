@@ -28,6 +28,21 @@ section {
     align-items: center;
 }
 
+.error {
+    width: 280px;
+    height: 25px;
+    background-color: red;
+    margin-top: -18px;
+    border-radius: 5px;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+}
+
+.mistake {
+    border: 3px solid red;
+}
+
 .registration {
     height: 500px;
 }
@@ -39,7 +54,7 @@ section {
 }
 
 .logining {
-    height: 250px;
+    height: 300px;
 }
 
 h2 {
@@ -59,7 +74,7 @@ h2 {
 }
 
 .sign-in {
-    height: 200px;
+    height: 230px;
 }
 
 input {

@@ -9,14 +9,19 @@
 </head>
 <body>
     <section>
-        <div class="sign-up-window hidden">
+        <div class="sign-up-window">
             <div class="registration">
                 <h2>Please sign up</h2>
                 <form class="sign-up">
                     <input type="text" name="first-name" id="" placeholder="First name">
+                    <div class="error text-error hidden">Incorrect first name</div>
                     <input type="text" name="last-name" id="" placeholder="Last name">
+                    <div class="error text-error hidden">Incorrect last name</div>
                     <input type="email" name="email" id="" placeholder="Email address">
+                    <div class="error email-error hidden">This email already exist</div>
+                    <div class="error email-error hidden">Incorrect email address</div>
                     <input type="password" name="password" id="" placeholder="Password">
+                    <div class="error password-error hidden">Incorrect password</div>
                     <input type="button" name="sign-up" id="" value="Sign up">
                 </form>
                 <h4>Sign in now</h4>
@@ -28,12 +33,14 @@
                 <form class="sign-in">
                     <input type="email" name="email" id="" placeholder="Email address">
                     <input type="password" name="password" id="" placeholder="Password">
+                    <div class="error emptyStorage-error hidden">LocalStorage is empty</div>
+                    <div class="error emptyStorage-error hidden">Incorrect email or password</div>
                     <input type="button" name="sign-in" id="" value="Sign in">
                 </form>
                 <h4>Sign up now</h4>
             </div>
         </div>
-        <div class="user-window">
+        <div class="user-window hidden">
             <div class="user-info">
                 <div class="user-avatar"></div>
                 <h3 class="user-name">Ivan Ivanov</h3>
